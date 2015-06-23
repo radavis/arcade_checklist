@@ -1,7 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Company.find_or_create_by!(name: "Atari", website_url: "https://www.atari.com/")
+Company.find_or_create_by!(name: "Bally", website_url: "https://www.ballytech.com/")
+Company.find_or_create_by!(name: "Capcom", website_url: "http://www.capcom.com/")
+Company.find_or_create_by!(name: "Midway", website_url: "https://en.wikipedia.org/wiki/Midway_Games")
+Company.find_or_create_by!(name: "Namco", website_url: "http://www.bandainamcoent.com/")
+Company.find_or_create_by!(name: "Sega", website_url: "http://www.sega.com/")

@@ -1,0 +1,17 @@
+<h2>New Game</h2>
+
+<%= form_for @game do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br />
+
+  <%= f.label :release_date %>
+  <%= f.date_select :release_date %><br />
+
+  <%= f.label :company %>
+  <%= f.collection_select :company_id, Company.all, :id, :name %>
+
+  <%= f.label :photo_url %>
+  <%= f.text_field :photo_url %>
+
+  <%= f.submit "Create Game", class: "button" %>
+<% end %>

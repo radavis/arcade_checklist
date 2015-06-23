@@ -1,0 +1,11 @@
+<h2>New Company</h2>
+
+<%= form_for @company do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br />
+
+  <%= f.label :website_url %>
+  <%= f.text_field :website_url %><br />
+
+  <%= f.submit "Create Company", class: :button %>
+<% end %>
